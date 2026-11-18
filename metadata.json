@@ -1,0 +1,6 @@
+{
+  "name": "iHome — Interior Styling & Architecture",
+  "description": "Curated interiors, thoughtful styling, and bespoke residential spaces designed to feel warm, elevated, and beautifully lived in.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

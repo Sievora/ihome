@@ -1,0 +1,360 @@
+/* ==========================================================================
+   RESPONSIVE.CSS - Adaptive Media Queries for Mobile, Tablet, and Desktop
+   ========================================================================== */
+
+/* Tablet & Smaller Laptops (under 1024px) */
+@media (max-width: 1024px) {
+  .hero-headline {
+    font-size: 40px;
+    width: 85%;
+  }
+
+  .metrics-bento-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .fan-card-left-outer {
+    transform: translate(calc(-50% - 260px), -50%) rotate(-2.5deg);
+    width: 200px;
+    height: 310px;
+  }
+
+  .fan-card-left-inner {
+    transform: translate(calc(-50% - 135px), -50%) rotate(-1deg);
+    width: 210px;
+    height: 330px;
+  }
+
+  .fan-card-right-inner {
+    transform: translate(calc(-50% + 135px), -50%) rotate(1deg);
+    width: 210px;
+    height: 330px;
+  }
+
+  .fan-card-right-outer {
+    transform: translate(calc(-50% + 260px), -50%) rotate(2.5deg);
+    width: 200px;
+    height: 310px;
+  }
+
+  .gallery-section {
+    padding: 1.25rem;
+  }
+
+  .gallery-track {
+    height: 400px;
+    gap: 0.875rem;
+  }
+
+  .gallery-item.active {
+    flex: 4.6 1 0%;
+  }
+
+  .gallery-item {
+    flex: 0.8 1 0%;
+  }
+
+  .how-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 20px;
+  }
+
+  .how-it-works-section {
+    padding: 60px 20px;
+  }
+}
+
+/* Tablet Portrait & Large Mobile (under 768px) */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .hero-headline {
+    font-size: clamp(26px, 6vw, 36px);
+    line-height: 1.18;
+    width: 95%;
+  }
+
+  .hero-subhead {
+    font-size: 14px;
+    padding: 0 12px;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+
+  .hero-cards-stage {
+    height: 360px;
+  }
+
+  /* Hide distant outer cards on smaller viewports */
+  .fan-card-left-outer,
+  .fan-card-right-outer {
+    display: none;
+  }
+
+  .fan-card-left-inner {
+    transform: translate(calc(-50% - 105px), -50%) rotate(-1.5deg);
+    width: 195px;
+    height: 305px;
+  }
+
+  .fan-card-center {
+    width: 230px;
+    height: 325px;
+  }
+
+  .fan-card-right-inner {
+    transform: translate(calc(-50% + 105px), -50%) rotate(1.5deg);
+    width: 195px;
+    height: 305px;
+  }
+
+  /* Bento metrics */
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .metric-card {
+    padding: 20px;
+  }
+
+  .metric-number {
+    font-size: 36px;
+  }
+
+  .gallery-section {
+    padding: 1rem;
+  }
+
+  .gallery-track {
+    height: 350px;
+    gap: 0.625rem;
+  }
+
+  .gallery-item.active {
+    flex: 4 1 0%;
+    border-radius: 22px;
+  }
+
+  .gallery-item {
+    flex: 0.85 1 0%;
+    min-width: 32px;
+  }
+
+  .item-badge {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .badge-pill {
+    padding: 6px 14px;
+  }
+
+  .badge-text {
+    font-size: 0.75rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .service-card:last-child {
+    grid-column: span 2;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+/* Mobile Screens (under 640px) */
+@media (max-width: 640px) {
+  .services-section {
+    padding: 2.5rem 1rem 1.5rem 1rem;
+    justify-content: flex-start;
+  }
+
+  .services-badge-wrap {
+    margin-bottom: 1rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .service-card:last-child {
+    grid-column: auto;
+  }
+
+  .service-card {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .card-icon-box {
+    margin-bottom: 1.5rem;
+    width: 42px;
+    height: 42px;
+  }
+
+  .card-icon-box svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .card-title {
+    font-size: 1.125rem;
+  }
+
+  .card-desc {
+    font-size: 0.875rem;
+  }
+
+  .ticker-wrapper {
+    margin-top: 2.5rem;
+  }
+
+  .ticker-track {
+    gap: 1.5rem;
+    animation-duration: 22s;
+  }
+
+  .ticker-item {
+    font-size: 0.8125rem;
+  }
+
+  .how-it-works-section {
+    padding: 48px 16px;
+  }
+
+  .how-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .how-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .how-step-card {
+    padding: 36px 20px 26px 20px;
+    min-height: auto;
+  }
+
+  .btn-how-start {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+}
+
+/* Mobile Screens (under 520px) */
+@media (max-width: 520px) {
+  .hero-headline {
+    font-size: clamp(23px, 6.5vw, 28px);
+    width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 36px auto;
+  }
+
+  .btn-primary-pill,
+  .btn-secondary-pill {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-cards-stage {
+    height: 320px;
+  }
+
+  .fan-card-left-inner,
+  .fan-card-right-inner {
+    width: 30%;
+  }
+
+  .fan-card-left-inner:hover {
+    transform: translate(calc(-50% - 70px), -50%) rotate(-2deg);
+    z-index: 25;
+    box-shadow: 0 24px 44px -10px rgba(3, 9, 12, 0.5);
+    width: 50%;
+  }
+
+  .fan-card-right-inner:hover {
+    transform: translate(calc(-50% + 70px), -50%) rotate(2deg);
+    z-index: 25;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+  }
+
+  .fan-card-center {
+    width: 220px;
+    height: 310px;
+    border-width: 2.5px;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .bio-footer {
+    margin-top: 32px;
+  }
+
+  .gallery-section {
+    padding: 0.75rem;
+  }
+
+  .gallery-track {
+    height: 310px;
+    gap: 0.5rem;
+  }
+
+  .gallery-item.active {
+    flex: 3.5 1 0%;
+    border-radius: 18px;
+  }
+
+  .gallery-item {
+    flex: 0.9 1 0%;
+    min-width: 26px;
+  }
+
+  .item-badge {
+    bottom: 12px;
+    right: 12px;
+  }
+
+  .badge-pill {
+    padding: 5px 12px;
+  }
+
+  .badge-text {
+    font-size: 0.6875rem;
+  }
+
+  .modal-card {
+    padding: 24px 18px;
+  }
+}

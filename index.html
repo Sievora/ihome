@@ -1,0 +1,1235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iHome — Interior Styling &amp; Architecture</title>
+    <meta name="description" content="Curated interiors, thoughtful styling, and bespoke residential spaces designed to feel warm, elevated, and beautifully lived in." />
+    <meta property="og:title" content="iHome — Interior Styling &amp; Architecture" />
+    <meta property="og:description" content="Curated interiors, thoughtful styling, and bespoke residential spaces designed to feel warm, elevated, and beautifully lived in." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/responsive.css" />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('dh_theme');
+          var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || (!saved && systemDark)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="preloader-active">
+    <div id="site-preloader" class="site-preloader" aria-live="polite" aria-busy="true">
+      <div class="preloader-content">
+        <div id="preloader-home-icon" class="preloader-home-icon" aria-hidden="true">
+          <!-- <img src="/home.gif" alt="Loading home animation" class="preloader-gif" /> -->
+        </div>
+        <div class="preloader-track" aria-hidden="true">
+          <span id="preloader-progress" class="preloader-progress"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Sticky Header -->
+    <header class="site-header">
+      <div class="header-inner container">
+        <a href="#" class="brand-profile" id="brand-logo" aria-label="iHome">
+          <span class="brand-name">iHome</span>
+        </a>
+
+        <div class="header-actions">
+          <button type="button" class="btn-menu-pill" id="btn-use-for-free">Buyers Guide</button>
+          <button type="button" class="btn-theme-toggle" id="btn-theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <svg class="theme-icon icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu Dropdown Drawer -->
+      <div class="menu-drawer" id="menu-drawer">
+        <div class="container menu-drawer-inner">
+          <div class="menu-nav-links">
+            <a href="#about-metrics">Firm Profile &amp; Track Record</a>
+            <a href="#about-metrics">About</a>
+            <a href="#contact" id="menu-contact-link">Schedule a Private Viewing</a>
+          </div>
+          <div>
+            <p style="font-size: 11px; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Private Advisory</p>
+            <p style="font-size: 13px; color: var(--color-text-main);">Accepting new buyer &amp; seller mandates</p>
+            <div style="margin-top: 14px;">
+              <button type="button" class="btn-drawer-theme" id="btn-drawer-theme">
+                <span id="drawer-theme-text">Switch to Dark Mode</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section text-center">
+        <div class="container">
+          <!-- Availability Pill Badge -->
+          <div class="hero-pill-badge entrance entrance--up" style="--entrance-delay: 80ms;">
+            <span class="badge-tag-blue">New Collection</span>
+            <span class="badge-text">12 interior concepts available for styling</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="hero-headline entrance entrance--up" style="--entrance-delay: 170ms;">
+            Thoughtful interiors crafted for the way you live
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-subhead entrance entrance--up" style="--entrance-delay: 260ms;">
+            Discover layered textures, elevated palettes, and bespoke residential styling designed to make every room feel serene, functional, and distinctly yours.
+          </p>
+
+          <!-- Call-To-Action Buttons -->
+          <div class="hero-buttons entrance entrance--up" style="--entrance-delay: 350ms;">
+            <button type="button" class="btn-primary-pill" id="btn-let-talk">
+              <span class="round" style="color: var(--color-badge-blue); font-weight: 800;">✦</span>
+              <span>Book a Design Call</span>
+            </button>
+            <button type="button" class="btn-secondary-pill" id="btn-email-me">
+              <span>Request a Portfolio</span>
+            </button>
+          </div>
+
+          <!-- Hero Collage Fan Showcase: Buildings, Apartments & Landscapes -->
+          <div class="hero-cards-stage entrance entrance--up" style="--entrance-delay: 450ms;">
+            <!-- Left Outer Card: Prime High-Rise Buildings & Architecture -->
+            <div class="fan-card fan-card-left-outer">
+              <div>
+                <div class="card-dots">
+                  <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+                <p class="fan-card-title">Elegant living spaces &amp; bespoke interior architecture</p>
+              </div>
+              <div class="fan-card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Modern city high-rise buildings and architecture" />
+              </div>
+            </div>
+
+            <!-- Left Inner Card: Prime Location Feature -->
+            <div class="fan-card fan-card-left-inner">
+              <div>
+                <div class="icon-circle-btn">↗</div>
+                <h3 class="green-card-title">
+                  Calm, elevated spaces<br />for modern living
+                </h3>
+              </div>
+              <div>
+                <div class="avatars-overlap">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="Client 1" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80" alt="Client 2" />
+                  <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=80&q=80" alt="Client 3" />
+                </div>
+                <div class="pill-dark-sm">View Concepts</div>
+              </div>
+            </div>
+
+            <!-- Center Card: Luxury Urban Apartment & Living Room -->
+            <div class="fan-card-center">
+              <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80">
+                <source src="Plants_fill_cozy_living_room.webm" type="video/webm" />
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80" alt="Luxury living room interior with warm tones and layered textures" />
+              </video>
+              <div class="fan-card-center-badge">
+                <div>
+                  <h4>The Solstice Lounge</h4>
+                  <p>Soft minimalism &bull; layered textures</p>
+                </div>
+                <span>Styling from €18k</span>
+              </div>
+            </div>
+
+            <!-- Right Inner Card: Luxury Apartment Interior Design -->
+            <div class="fan-card fan-card-right-inner">
+              <div>
+                <div class="mockup-header">
+                  <div class="card-dots">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                  </div>
+                  <span class="mockup-url">ihome.studio</span>
+                </div>
+                <div class="mockup-author">
+                  <div class="mockup-author-pic">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=200&q=80" alt="Interior designer portrait" />
+                  </div>
+                  <div>
+                    <h4>Interior Styling Lab</h4>
+                    <p>Palette &amp; material curation</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="mockup-thumbnail">
+                  <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80" alt="Luxury apartment living room interior" />
+                </div>
+                <div class="mockup-footer">
+                  <span style="color: #6b7280;">View Design Details</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Outer Card: Prime Coastal Estate Landscape & Land -->
+            <div class="fan-card fan-card-right-outer">
+              <div>
+                <div class="card-dots">
+                  <span class="dot" style="background:#4b5563;"></span>
+                  <span class="dot" style="background:#4b5563;"></span>
+                  <span class="dot" style="background:#4b5563;"></span>
+                </div>
+                <span class="dark-card-tag">Material Palette</span>
+              </div>
+              <div class="fan-card-img-wrap" style="background:#09090b;">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Warm luxury interior palette and natural textures" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About & Metrics Bento Section -->
+      <section class="metrics-section" id="about-metrics">
+        <div class="container">
+          <div class="metrics-bento-layout entrance entrance--up">
+            <!-- Left Column: Dark "About iHome" Bio Card -->
+            <div class="bio-card-dark">
+              <div>
+                <h2 class="bio-heading">Interior design studio for refined everyday living</h2>
+                <p class="bio-body">
+                  iHome curates elevated interiors that balance comfort, function, and beauty. We create spaces with tactile materials, intelligent layouts, and tailored styling that brings warmth and personality to each room.
+                </p>
+              </div>
+              <div class="bio-footer">
+                <div class="bio-avatar">
+                  <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80" alt="iHome interior design studio" />
+                </div>
+                <button type="button" class="btn-about-pill" id="btn-about-me">
+                  <span>Our philosophy</span>
+                  <span class="round" style="color: var(--color-badge-blue);">↗</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Column: 2x2 Grid of 4 Metric Cards -->
+            <div class="metrics-grid">
+              <!-- Card 1: 15+ years -->
+              <div class="metric-card">
+                <div class="metric-card-header">
+                  <span class="metric-number" data-count="15" data-suffix="+">15+</span>
+                  <span class="metric-label">years</span>
+                </div>
+                <p class="metric-desc">
+                  Curating premier residential architecture and luxury estates across prime global destinations.
+                </p>
+              </div>
+
+              <!-- Card 2: $480M+ volume -->
+              <div class="metric-card">
+                <div class="metric-card-header">
+                  <span class="metric-number" data-count="480" data-prefix="$" data-suffix="M+">$480M+</span>
+                  <span class="metric-label">closed</span>
+                </div>
+                <p class="metric-desc">
+                  In discreet transactions, from private waterfront compounds to high-concept architectural sanctuaries.
+                </p>
+              </div>
+
+              <!-- Card 3: 240+ estates -->
+              <div class="metric-card">
+                <div class="metric-card-header">
+                  <span class="metric-number" data-count="240" data-suffix="+">240+</span>
+                  <span class="metric-label">estates sold</span>
+                </div>
+                <p class="metric-desc">
+                  Trusted by founders, collectors, and visionaries seeking authentic, quiet architectural craftsmanship.
+                </p>
+              </div>
+
+              <!-- Card 4: 99.4% satisfaction -->
+              <div class="metric-card">
+                <div class="metric-card-header">
+                  <span class="metric-number" data-count="99.4" data-suffix="%" data-decimals="1">99.4%</span>
+                  <span class="metric-label">satisfaction</span>
+                </div>
+                <p class="metric-desc">
+                  Client retention and referral rate verified through multi-generational family estate representation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
+      <!-- Services Showcase Section -->
+             <!-- Services Showcase Section -->
+                    <!-- Services Showcase Section -->
+                           <!-- Services Showcase Section -->
+                            
+      <section class="services-section">
+        <div class="services-container entrance entrance--up">
+          <div class="gallery-header">
+            <span class="gallery-subhead"><p><span class="round">•</span>Services</p></span>
+            <h2 class="sr-only">Creative interior design solutions</h2>
+          </div>
+
+          <!-- 3 Services Cards Grid -->
+          <div class="cards-grid" role="list">
+            <!-- Card 1: Interior Styling -->
+            <article class="service-card active" tabindex="0" role="listitem" id="card-buying">
+              <div class="card-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </div>
+              <h2 class="card-title">Interior Styling</h2>
+              <p class="card-desc">Layered textures, curated palettes, and finishing touches that bring warmth and polish to every room.</p>
+            </article>
+
+            <!-- Card 2: Full Design & Build -->
+            <article class="service-card" tabindex="0" role="listitem" id="card-selling">
+              <div class="card-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m16 6 4 14"/>
+                  <path d="M12 6v14"/>
+                  <path d="M8 8v12"/>
+                  <path d="M4 4v16"/>
+                </svg>
+              </div>
+              <h2 class="card-title">Full Design &amp; Build</h2>
+              <p class="card-desc">Complete concept development, sourcing, and execution for thoughtful spaces that feel effortless.</p>
+            </article>
+
+            <!-- Card 3: Spatial Planning -->
+            <article class="service-card" tabindex="0" role="listitem" id="card-valuation">
+              <div class="card-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="1" x2="12" y2="23"/>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <h2 class="card-title">Space Planning</h2>
+              <p class="card-desc">Functional layouts and carefully considered proportions that support the rhythm of daily life.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Bottom Infinite Marquee Ticker -->
+        <div class="ticker-wrapper" aria-hidden="true">
+          <div class="ticker-track">
+            <span class="ticker-item bold">Interior Styling</span>
+            <span class="ticker-item bold">Luxury Residences</span>
+            <span class="ticker-item bold">Room Refreshes</span>
+            <span class="ticker-item bold">Material Curation</span>
+            <span class="ticker-item bold">Custom Joinery</span>
+            <span class="ticker-item bold">Mood Boards</span>
+            <span class="ticker-item bold">Concept Planning</span>
+            <span class="ticker-item bold">Boutique Hospitality</span>
+            <span class="ticker-item bold">Design Consultation</span>
+
+            <!-- Duplicate for seamless infinite loop -->
+            <span class="ticker-item bold">Interior Styling</span>
+            <span class="ticker-item bold">Luxury Residences</span>
+            <span class="ticker-item bold">Room Refreshes</span>
+            <span class="ticker-item bold">Material Curation</span>
+            <span class="ticker-item bold">Custom Joinery</span>
+            <span class="ticker-item bold">Mood Boards</span>
+            <span class="ticker-item bold">Concept Planning</span>
+            <span class="ticker-item bold">Boutique Hospitality</span>
+            <span class="ticker-item bold">Design Consultation</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Architectural Gallery Section -->
+      <section class="gallery-section">
+        <div class="gallery-wrapper entrance entrance--up">
+          <div class="gallery-header">
+            <span class="gallery-subhead"><p><span class="round">•</span>Featured Rooms</p></span>
+            <h3 class="sr-only">Explore our interior concepts</h3>
+          </div>
+          <!-- 5-Panel Morphing Track -->
+          <div class="gallery-track" id="gallery-track" role="region" aria-label="Interior Design Gallery">
+            <!-- Card 1: Foyer Interior (Pill) -->
+            <button
+              type="button"
+              class="gallery-item"
+              id="panel-foyer"
+              aria-label="Grand Foyer - Click to expand"
+              aria-expanded="false"
+            >
+              <img
+                src="office.webp"
+                alt="Grand Foyer and luxury interior staircase"
+                class="item-image item-poster"
+                loading="eager"
+              />
+              <video class="item-image item-video" muted loop playsinline preload="auto" poster="office.webp">
+                <source src="office.webm" type="video/webm" />
+              </video>
+
+              <div class="item-overlay"></div>
+              <div class="item-hint">
+                <span class="hint-label">Tap to view</span>
+              </div>
+              <div class="item-badge">
+                <div class="badge-pill">
+                  <span class="badge-text-two">Office Design</span>
+                </div>
+              </div>
+            </button>
+
+            <!-- Card 2: Glass Pavilion (Pill) -->
+            <button
+              type="button"
+              class="gallery-item"
+              id="panel-pavilion"
+              aria-label="Glass Pavilion - Click to expand"
+              aria-expanded="false"
+            >
+              <img
+                src="hotelroom.webp"
+                alt="Modern home glass facade overlooking pool water"
+                class="item-image item-poster"
+                loading="eager"
+              />
+              <video class="item-image item-video" muted loop playsinline preload="auto" poster="hotelroom.webp">
+                <source src="hotelroom.webm" type="video/webm" />
+              </video>
+
+              <div class="item-overlay"></div>
+              <div class="item-hint">
+                <span class="hint-label">Tap to view</span>
+              </div>
+              <div class="item-badge">
+                <div class="badge-pill">
+                  <span class="badge-text-two">Hotel Room Design</span>
+                </div>
+              </div>
+            </button>
+
+            <!-- Card 3: 7 Bed Estate (Default Active Center Card) -->
+            <button
+              type="button"
+              class="gallery-item active"
+              id="panel-estate"
+              aria-label="7 Bed Estate - Expanded view"
+              aria-expanded="true"
+            >
+              <img
+                src="sittingroom.jpg"
+                alt="Two-story luxury modern villa with illuminated pool and wooden patio at twilight"
+                class="item-image item-poster"
+                loading="eager"
+              />
+              <video class="item-image item-video" muted loop playsinline preload="auto" poster="sittingroom.jpg">
+                <source src="sittingroom.webm" type="video/webm" />
+              </video>
+
+              <div class="item-overlay"></div>
+              <div class="item-hint">
+                <span class="hint-label">Tap to view</span>
+              </div>
+              <div class="item-badge">
+                <div class="badge-pill">
+                  <span class="badge-text-two">Sitting Room Design</span>
+                </div>
+              </div>
+            </button>
+
+            <!-- Card 4: Sunlit Terrace (Pill) -->
+            <button
+              type="button"
+              class="gallery-item"
+              id="panel-terrace"
+              aria-label="Sunlit Terrace - Click to expand"
+              aria-expanded="false"
+            >
+              <img
+                src="kitchen.webp"
+                alt="Modern poolside terrace with wood decking and turquoise pool"
+                class="item-image item-poster"
+                loading="eager"
+              />
+              <video class="item-image item-video" muted loop playsinline preload="auto" poster="kitchen.webp">
+                <source src="kitchen.webm" type="video/webm" />
+              </video>
+
+              <div class="item-overlay"></div>
+              <div class="item-hint">
+                <span class="hint-label">Tap to view</span>
+              </div>
+              <div class="item-badge">
+                <div class="badge-pill">
+                  <span class="badge-text-two">Kitchen Design</span>
+                </div>
+              </div>
+            </button>
+
+            <!-- Card 5: Modern Residence (Pill) -->
+            <button
+              type="button"
+              class="gallery-item"
+              id="panel-residence"
+              aria-label="Modern Residence - Click to expand"
+              aria-expanded="false"
+            >
+              <img
+                src="toilet.webp"
+                alt="Contemporary architectural facade with wooden slats and landscaped garden"
+                class="item-image item-poster"
+                loading="eager"
+              />
+              <video class="item-image item-video" muted loop playsinline preload="auto" poster="toilet.webp">
+                <source src="toilet.webm" type="video/webm" />
+              </video>
+
+              <div class="item-overlay"></div>
+              <div class="item-hint">
+                <span class="hint-label">Tap to view</span>
+              </div>
+              <div class="item-badge">
+                <div class="badge-pill">
+                  <span class="badge-text-two">Toilet Design</span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- How It Works Section -->
+      <section class="how-it-works-section" id="how-it-works">
+        <div class="how-container">
+          <div class="how-header-row">
+            <div class="gallery-header" style="text-align: justify;">
+            <h2 class="sr-only">How we work</h2>
+            <span class="gallery-subhead"><p><span class="round">•</span>A calm, collaborative process for spaces that feel beautifully considered.</p></span>
+          </div>
+            <div>
+              <button type="button" class="btn-how-start" id="btn-how-start">
+                <span>Start your project</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="how-steps-grid">
+            <!-- Step 1: Book a discovery call -->
+            <div class="how-step-card" id="step-strategy-call">
+              <div class="how-step-icon-badge badge-green" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"></path>
+                  <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"></path>
+                  <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"></path>
+                  <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"></path>
+                  <circle cx="12" cy="14" r="1.5" fill="currentColor"></circle>
+                </svg>
+              </div>
+              <h3 class="how-step-title" >Book a discovery call</h3>
+              <p class="how-step-desc">Share your lifestyle, preferences, and the feeling you want your home to create.</p>
+            </div>
+
+            <!-- Step 2: Define your vision -->
+            <div class="how-step-card" id="step-choose-plan">
+              <div class="how-step-icon-badge badge-pink" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path d="M12 6v12M15 9.5a2.5 2.5 0 0 0-5 0c0 3 5 2 5 5a2.5 2.5 0 0 1-5 0"></path>
+                </svg>
+              </div>
+              <h3 class="how-step-title">Define your vision</h3>
+              <p class="how-step-desc">We shape the right design direction, materials, and mood for your project.</p>
+            </div>
+
+            <!-- Step 3: Approve the concept -->
+            <div class="how-step-card" id="step-setup-backlog">
+              <div class="how-step-icon-badge badge-orange" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="9" rx="1.5"></rect>
+                  <rect x="14" y="3" width="7" height="5" rx="1.5"></rect>
+                  <rect x="14" y="12" width="7" height="9" rx="1.5"></rect>
+                  <rect x="3" y="16" width="7" height="5" rx="1.5"></rect>
+                </svg>
+              </div>
+              <h3 class="how-step-title">Approve the concept</h3>
+              <p class="how-step-desc">Together we refine layouts, palettes, and details before execution begins.</p>
+            </div>
+
+            <!-- Step 4: Enjoy the transformation -->
+            <div class="how-step-card" id="step-enjoy-results">
+              <div class="how-step-icon-badge badge-purple" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l2.4 5.3 5.6.8-4 4.1 1 5.8-5-2.8-5 2.8 1-5.8-4-4.1 5.6-.8L12 2z"></path>
+                  <path d="M19 4l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z"></path>
+                </svg>
+              </div>
+              <h3 class="how-step-title">Enjoy the transformation</h3>
+              <p class="how-step-desc">Receive a finished space that feels intuitive, elevated, and completely personal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Contact Modal (Shared with Hero Section & How It Works) -->
+    <div class="modal-backdrop" id="modal-contact" role="dialog" aria-modal="true" aria-labelledby="modal-contact-title">
+      <div class="modal-card">
+        <button type="button" class="btn-close-modal" data-close-modal aria-label="Close dialog">✕</button>
+        <div style="margin-bottom: 20px;">
+          <span style="font-size: 11px; font-weight: 600; color: var(  --color-badge-blue); text-transform: uppercase; letter-spacing: 0.05em;">• Design Consultation Available</span>
+          <h3 id="modal-contact-title" style="font-size: 22px; font-weight: 700; margin-top: 4px; letter-spacing: -0.02em; color: var(--color-text-main);">Inquire About Your Project</h3>
+          <p style="font-size: 13px; color: var(--color-text-muted); margin-top: 6px;">Connect with our design team for consultations, concept boards, and tailored interior direction.</p>
+        </div>
+        <form id="contact-form" style="display: flex; flex-direction: column; gap: 14px;">
+          <div>
+            <label for="contact-fullname" style="display: block; font-size: 11px; font-weight: 600; margin-bottom: 4px; color: var(--color-text-muted);">Full Name</label>
+            <input type="text" id="contact-fullname" required placeholder="Elena Rostova" class="modal-input" />
+          </div>
+          <div>
+            <label for="contact-useremail" style="display: block; font-size: 11px; font-weight: 600; margin-bottom: 4px; color: var(--color-text-muted);">Email Address</label>
+            <input type="email" id="contact-useremail" required placeholder="elena@studio.com" class="modal-input" />
+          </div>
+          <div>
+            <label for="contact-criteria" style="display: block; font-size: 11px; font-weight: 600; margin-bottom: 4px; color: var(--color-text-muted);">Project Type / Design Goals</label>
+            <textarea id="contact-criteria" required rows="3" placeholder="Tell us about your project, room priorities, and the atmosphere you want to create..." class="modal-input" style="resize: none;"></textarea>
+          </div>
+          <button type="submit" class="btn-primary-pill" style="width: 100%; justify-content: center; padding: 12px; margin-top: 8px;">
+            <span>Submit Inquiry ↗</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- About Modal -->
+    <div class="modal-backdrop" id="modal-about" role="dialog" aria-modal="true">
+      <div class="modal-card" style="max-width: 580px;">
+        <button type="button" class="btn-close-modal" data-close-modal aria-label="Close dialog">✕</button>
+        <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 20px;">
+          <div style="width: 60px; height: 60px; border-radius: 16px; overflow: hidden; border: 2px solid var(--color-border);">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=200&q=80" alt="iHome Architecture" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+          <div>
+            <h3 style="font-size: 20px; font-weight: 700; color: var(--color-text-main);">iHome Studio</h3>
+            <p style="font-size: 12px; color: var(--color-text-muted);">Interior Styling &bull; Spatial Design</p>
+          </div>
+        </div>
+        <div style="font-size: 13px; line-height: 1.65; color: var(--color-text-muted); display: flex; flex-direction: column; gap: 12px;">
+          <p>Founded on a love of light, proportion, and tactile materials, iHome creates interiors that feel deeply personal and effortlessly refined.</p>
+          <p>From warm layered living rooms to serene hospitality spaces, every project is thoughtfully composed to balance beauty, comfort, and flow.</p>
+        </div>
+        <button type="button" class="btn-primary-pill" id="btn-about-to-contact" style="margin-top: 24px;">
+          <span>Book a Design Consultation</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Freebies / Design Guide Modal -->
+    <div class="modal-backdrop" id="modal-freebies" role="dialog" aria-modal="true">
+      <div class="modal-card">
+        <button type="button" class="btn-close-modal" data-close-modal aria-label="Close dialog">✕</button>
+        <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 8px; color: var(--color-text-main);">Styling Guides &amp; Moodboards</h3>
+        <p style="font-size: 13px; color: var(--color-text-muted); margin-bottom: 20px;">Curated inspiration and practical design references for elevated interiors.</p>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="padding: 14px; border: 1px solid var(--color-border); background: var(--color-card-gray); border-radius: 14px; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <p style="font-size: 13px; font-weight: 600; color: var(--color-text-main);">Interior Moodboard 2026</p>
+              <p style="font-size: 11px; color: var(--color-text-muted);">Material palettes &bull; Free PDF</p>
+            </div>
+            <span style="font-size: 12px; font-weight: 600; color: var(--color-text-main); cursor: pointer;">Download&nbsp;↓</span>
+          </div>
+          <div style="padding: 14px; border: 1px solid var(--color-border); background: var(--color-card-gray); border-radius: 14px; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <p style="font-size: 13px; font-weight: 600; color: var(--color-text-main);">Room-by-Room Styling Guide</p>
+              <p style="font-size: 11px; color: var(--color-text-muted);">Layout ideas &bull; Free PDF</p>
+            </div>
+            <span style="font-size: 12px; font-weight: 600; color: var(--color-text-main); cursor: pointer;">Download&nbsp;↓</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-bubble" id="toast-bubble" role="status" aria-live="polite">
+      ✓ Copied email to clipboard
+    </div>
+
+
+
+    
+<main>
+      <!-- Real Estate Client Marquee Testimonials Section -->
+      <section class="testimonials-marquee-section" id="testimonials">
+        <div class="testimonials-header">
+          <div class="testimonials-pill-badge">
+            <span class="badge-tag-blue">Client Reviews</span>
+            <span class="badge-text">Private advisory testimonials</span>
+          </div>
+          <h2 class="testimonials-headline">What people are saying?</h2>
+          <p class="testimonials-subhead">
+            Don't just take our word for it—see what our homeowners, investors, and architecture patrons have to say about their experience!
+          </p>
+        </div>
+
+        <!-- Marquee Container with Fade-In Entrance and Fade-Out Exit -->
+        <div class="testimonials-marquee-container" aria-label="Real Estate Client Testimonials">
+          <!-- Row 1: Leftward Infinite Marquee -->
+          <div class="testimonials-marquee-row row-scroll-left">
+            <!-- First Track Set -->
+            <div class="testimonials-marquee-track">
+              <!-- Card 1: Peach (Olivia Richardson) -->
+              <article class="tm-card tm-card-peach">
+                <p class="tm-quote">
+                  "I've explored countless luxury brokerages, but nothing compares to the discretion and architectural curation of iHome. Every private tour felt like visiting a private museum. Our Aspen estate is a dream."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=80" alt="Olivia Richardson" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Olivia Richardson</h3>
+                    <p class="tm-author-location">New York, USA</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 2: Amber (Sophia Mitchell) -->
+              <article class="tm-card tm-card-amber">
+                <p class="tm-quote">
+                  "As an architecture enthusiast, I appreciate the honesty of raw concrete and natural light. The Glass Pavilion they negotiated off-market has become my peaceful sanctuary after demanding quarters."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&q=80" alt="Sophia Mitchell" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Sophia Mitchell</h3>
+                    <p class="tm-author-location">London, UK</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 3: Golden Yellow (Aisha Khan) -->
+              <article class="tm-card tm-card-yellow">
+                <p class="tm-quote">
+                  "I never knew purchasing real estate across borders could feel this effortless! Their valuation was surgical, zoning was vetted in days, and escrow closed with complete discretion."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=160&q=80" alt="Aisha Khan" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Aisha Khan</h3>
+                    <p class="tm-author-location">Dubai, UAE</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 4: Mint Green (Julian Vance) -->
+              <article class="tm-card tm-card-green">
+                <p class="tm-quote">
+                  "Selling our mid-century architectural compound required a buyer who truly honored the architect's heritage. iHome connected us with a dedicated patron while exceeding our reserve benchmark."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80" alt="Julian Vance" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Julian Vance</h3>
+                    <p class="tm-author-location">Zurich, Switzerland</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Duplicate Track for Seamless Infinite Loop -->
+            <div class="testimonials-marquee-track" aria-hidden="true">
+              <!-- Card 1 Duplicate -->
+              <article class="tm-card tm-card-peach">
+                <p class="tm-quote">
+                  "I've explored countless luxury brokerages, but nothing compares to the discretion and architectural curation of iHome. Every private tour felt like visiting a private museum. Our Aspen estate is a dream."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=80" alt="Olivia Richardson" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Olivia Richardson</h3>
+                    <p class="tm-author-location">New York, USA</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 2 Duplicate -->
+              <article class="tm-card tm-card-amber">
+                <p class="tm-quote">
+                  "As an architecture enthusiast, I appreciate the honesty of raw concrete and natural light. The Glass Pavilion they negotiated off-market has become my peaceful sanctuary after demanding quarters."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&q=80" alt="Sophia Mitchell" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Sophia Mitchell</h3>
+                    <p class="tm-author-location">London, UK</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 3 Duplicate -->
+              <article class="tm-card tm-card-yellow">
+                <p class="tm-quote">
+                  "I never knew purchasing real estate across borders could feel this effortless! Their valuation was surgical, zoning was vetted in days, and escrow closed with complete discretion."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=160&q=80" alt="Aisha Khan" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Aisha Khan</h3>
+                    <p class="tm-author-location">Dubai, UAE</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 4 Duplicate -->
+              <article class="tm-card tm-card-green">
+                <p class="tm-quote">
+                  "Selling our mid-century architectural compound required a buyer who truly honored the architect's heritage. iHome connected us with a dedicated patron while exceeding our reserve benchmark."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80" alt="Julian Vance" class="tm-author" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Julian Vance</h3>
+                    <p class="tm-author-location">Zurich, Switzerland</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Row 2: Rightward Infinite Marquee -->
+          <div class="testimonials-marquee-row row-scroll-right">
+            <!-- First Track Set -->
+            <div class="testimonials-marquee-track">
+              <!-- Card 5: Sky Blue (Emily Sanders) -->
+              <article class="tm-card tm-card-blue">
+                <p class="tm-quote">
+                  "The variety of residences is astonishing! Whether looking for an eco-conscious coastal pavilion or a private Tribeca penthouse, iHome delivered exactly what our family envisioned."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=160&q=80" alt="Emily Sanders" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Emily Sanders</h3>
+                    <p class="tm-author-location">Sydney, Australia</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 6: Lavender Purple (Priya Deshmukh) -->
+              <article class="tm-card tm-card-purple">
+                <p class="tm-quote">
+                  "This advisory team transformed our residential portfolio! Their structural due diligence and bespoke contract work made securing our Miami waterfront estate stress-free."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=160&q=80" alt="Priya Deshmukh" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Priya Deshmukh</h3>
+                    <p class="tm-author-location">Mumbai, India</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 7: Rose Pink (Mia Lawrence) -->
+              <article class="tm-card tm-card-pink">
+                <p class="tm-quote">
+                  "I'm obsessed with the attention to craft and detail. The team arranged private viewings at dusk so we could observe how natural evening light shifted across the living spaces."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=160&q=80" alt="Mia Lawrence" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Mia Lawrence</h3>
+                    <p class="tm-author-location">Toronto, Canada</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 8: Sand Amber (Marcus Chen) -->
+              <article class="tm-card tm-card-amber">
+                <p class="tm-quote">
+                  "Finding pure architectural integrity in modern real estate is rare. iHome's curation eliminated all the generic developer inventory and focused strictly on museum-grade properties."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80" alt="Marcus Chen" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Marcus Chen</h3>
+                    <p class="tm-author-location">Singapore</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Duplicate Track for Seamless Infinite Loop -->
+            <div class="testimonials-marquee-track" aria-hidden="true">
+              <!-- Card 5 Duplicate -->
+              <article class="tm-card tm-card-blue">
+                <p class="tm-quote">
+                  "The variety of residences is astonishing! Whether looking for an eco-conscious coastal pavilion or a private Tribeca penthouse, iHome delivered exactly what our family envisioned."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=160&q=80" alt="Emily Sanders" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Emily Sanders</h3>
+                    <p class="tm-author-location">Sydney, Australia</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 6 Duplicate -->
+              <article class="tm-card tm-card-purple">
+                <p class="tm-quote">
+                  "This advisory team transformed our residential portfolio! Their structural due diligence and bespoke contract work made securing our Miami waterfront estate stress-free."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=160&q=80" alt="Priya Deshmukh" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Priya Deshmukh</h3>
+                    <p class="tm-author-location">Mumbai, India</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 7 Duplicate -->
+              <article class="tm-card tm-card-pink">
+                <p class="tm-quote">
+                  "I'm obsessed with the attention to craft and detail. The team arranged private viewings at dusk so we could observe how natural evening light shifted across the living spaces."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=160&q=80" alt="Mia Lawrence" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Mia Lawrence</h3>
+                    <p class="tm-author-location">Toronto, Canada</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 8 Duplicate -->
+              <article class="tm-card tm-card-amber">
+                <p class="tm-quote">
+                  "Finding pure architectural integrity in modern real estate is rare. iHome's curation eliminated all the generic developer inventory and focused strictly on museum-grade properties."
+                </p>
+                <div class="tm-author">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80" alt="Marcus Chen" class="tm-avatar" loading="lazy" />
+                  <div class="tm-author-info">
+                    <h3 class="tm-author-name">Marcus Chen</h3>
+                    <p class="tm-author-location">Singapore</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+        <main>
+      <!-- Frequently Asked Questions Section (Conicorn Style) -->
+      <section class="faq-section" id="faq">
+        <div class="container faq-container">
+          <div class="faq-layout">
+            <!-- Left Column: Sticky Sidebar with Header & Contact Card -->
+            <aside class="faq-sidebar">
+              <div class="faq-pill-badge">
+                <span class="badge-tag-blue">FAQ</span>
+                <span class="badge-text">Frequently Asked Questions</span>
+              </div>
+              <h2 class="faq-headline">Frequently Asked Questions</h2>
+              <p class="faq-subhead">
+                Find clear answers about our architectural curation, private off-market acquisitions, and confidential representation.
+              </p>
+
+              <!-- Still have questions? Contact Support Card -->
+              <div class="faq-contact-card">
+                <div class="faq-avatars-group">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="iHome design studio team" class="faq-avatar-img" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Interior styling consultant" class="faq-avatar-img" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="Interior design consultant" class="faq-avatar-img" loading="lazy" />
+                </div>
+                <div>
+                  <h3 class="faq-contact-title">Still have questions?</h3>
+                  <p class="faq-contact-desc">Need guidance on styling, materials, or room planning? Our interior design team is here to help.</p>
+                </div>
+                <button type="button" class="btn-primary-pill faq-contact-btn" id="btn-faq-contact" data-open-contact>
+                  <span>Get in touch ↗</span>
+                </button>
+              </div>
+            </aside>
+
+            <!-- Right Column: Accordion Questions List -->
+            <div class="faq-accordion-list" role="region" aria-label="Frequently Asked Questions">
+              <!-- FAQ Item 1 (Open by default) -->
+              <div class="faq-item active" data-faq>
+                <button type="button" class="faq-question" aria-expanded="true">
+                  <span class="faq-question-text">How do you source off-market luxury architectural properties?</span>
+                  <span class="faq-icon-wrapper" aria-hidden="true">
+                    <svg class="faq-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p>
+                      Through our private network of visionary architects, family offices, and legacy estates, over 65% of our portfolio never appears on public MLS listings. We facilitate direct, confidential acquisitions with complete discretion under mutual non-disclosure agreements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="faq-item" data-faq>
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span class="faq-question-text">What is the typical timeline for an architectural property acquisition?</span>
+                  <span class="faq-icon-wrapper" aria-hidden="true">
+                    <svg class="faq-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p>
+                      A curated acquisition typically takes between 30 and 90 days. Because modernist and historic residences feature bespoke engineering, custom glazing, and specialized materials, we provide comprehensive technical dossiers and provenance audits before concluding negotiations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="faq-item" data-faq>
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span class="faq-question-text">Can international buyers acquire properties through iHome?</span>
+                  <span class="faq-icon-wrapper" aria-hidden="true">
+                    <svg class="faq-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p>
+                      Yes. We frequently represent international clients, expatriates, and cross-border family trusts. Our advisory team coordinates with leading global tax and legal specialists to structure acquisitions, streamline currency transfers, and facilitate fully remote closings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="faq-item" data-faq>
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span class="faq-question-text">How do you evaluate and verify architectural provenance?</span>
+                  <span class="faq-icon-wrapper" aria-hidden="true">
+                    <svg class="faq-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p>
+                      Our archival team consults original blueprints, municipal records, architect monographs, and historical renovation permits. We ensure structural and artistic authenticity while confirming any historic preservation covenants or landmark designations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="faq-item" data-faq>
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span class="faq-question-text">What advisory fees are associated with private buyer representation?</span>
+                  <span class="faq-icon-wrapper" aria-hidden="true">
+                    <svg class="faq-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p>
+                      Our buyer advisory services are standard for prime brokerages and are typically structured through seller concessions or an agreed advisory retainer credited upon successful closing. We provide full transparent fee disclosures upfront before engagement.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div class="faq-item" data-faq>
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span class="faq-question-text">Can I schedule a private twilight or weekend viewing?</span>
+                  <span class="faq-icon-wrapper" aria-hidden="true">
+                    <svg class="faq-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p>
+                      Absolutely. We specialize in private, chauffeured viewings timed specifically around natural light conditions—including sunrise and twilight sessions—allowing you to experience firsthand how natural light moves through the spatial volumes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+<!-- ========================================================================= -->
+    <!-- FOOTER SECTION (Inspired by Faizur Rehman Reference)                      -->
+    <!-- ========================================================================= -->
+    <footer class="footer-section" id="footer">
+      <div class="footer-container">
+        
+
+        <!-- Main Rounded Card -->
+        <div class="footer-main-card">
+          <div class="footer-content-grid">
+            
+            <!-- Left Column: Headline & Newsletter -->
+            <div class="footer-left-col">
+              <h3 class="footer-headline">
+                Design a home that feels beautifully considered, warm to live in, and distinctly yours.
+              </h3>
+
+              <form class="footer-newsletter-form" id="newsletter-form">
+                <div class="footer-input-wrapper">
+                  <input 
+                    type="email" 
+                    id="newsletter-email" 
+                    class="footer-email-input" 
+                    placeholder="Enter your email for interior inspiration..." 
+                    required 
+                    aria-label="Email address"
+                  />
+                  <button type="submit" class="footer-submit-btn" id="newsletter-submit-btn">
+                    <span>Get design notes</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                </div>
+                <div class="footer-form-feedback" id="newsletter-feedback" aria-live="polite"></div>
+              </form>
+            </div>
+
+            <!-- Right Column: Navigation Links Groups -->
+            <div class="footer-right-col">
+              
+              <div class="footer-links-group">
+                <h4 class="footer-group-title">Explore</h4>
+                <ul class="footer-links-list">
+                  <li>
+                    <a href="#about-metrics" class="footer-hover-link">
+                      <span class="link-sliding-text">
+                        <span class="link-text-current">Our studio</span>
+                        <span class="link-text-hover">Our studio</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#portfolio" class="footer-hover-link">
+                      <span class="link-sliding-text">
+                        <span class="link-text-current">View portfolio</span>
+                        <span class="link-text-hover">View portfolio</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#faq" class="footer-hover-link">
+                      <span class="link-sliding-text">
+                        <span class="link-text-current">Design FAQs</span>
+                        <span class="link-text-hover">Design FAQs</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-links-group">
+                <h4 class="footer-group-title">Contact</h4>
+                <ul class="footer-links-list">
+                  <li>
+                    <a href="mailto:sievoracompany@gmail.com" class="footer-hover-link">
+                      <span class="link-sliding-text">
+                        <span class="link-text-current">sievoracompany@gmail.com</span>
+                        <span class="link-text-hover">sievoracompany@gmail.com</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="footer-hover-link" data-open-contact>
+                      <span class="link-sliding-text">
+                        <span class="link-text-current">Get in touch</span>
+                        <span class="link-text-hover">Get in touch</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="footer-hover-link" data-open-contact>
+                      <span class="link-sliding-text">
+                        <span class="link-text-current">Book a design consult</span>
+                        <span class="link-text-hover">Book a design consult</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Giant Bespoke Wordmark SVG Logo --
+          <div class="footer-logo-wrapper" aria-label="Faizur logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1441 394" fill="none" class="footer-giant-logo">
+              <path d="M1398.6 308.657C1422.04 308.657 1441 327.518 1441 350.837C1441 374.157 1422.02 393.018 1398.6 393.018C1375.19 393.018 1356.23 374.157 1356.23 350.837C1356.23 327.518 1375.16 308.657 1398.6 308.657ZM486.888 133.973V386.23H414.203L411.887 366.642C390.587 382.021 364.404 391.114 336.08 391.114C264.705 391.114 206.85 333.554 206.85 262.543C206.85 191.533 264.705 133.973 336.08 133.973C365.436 133.973 392.501 143.742 414.203 160.124L416.721 133.973H486.888ZM990.14 272.337C990.14 301.343 1013.73 324.813 1042.88 324.813C1072.04 324.813 1095.63 301.343 1095.63 272.337V133.874H1173.35V386.155H1100.66L1098.15 370.049C1079.26 383.199 1053.84 390.939 1029.01 390.939C964.611 390.939 912.42 339.015 912.42 274.943V133.848H990.14V272.337ZM875.134 199.449H875.109L756.528 320.956H877.627V386.481H657.635V320.956L776.619 201.578C777.424 200.801 776.845 199.449 775.737 199.449H661.437C660.732 199.449 660.178 198.898 660.178 198.197V133.923H875.134V199.449ZM55.917 123.58C57.0754 53.2205 117.02 -10.8513 206.875 1.54735V67.3979C203.25 66.6966 199.498 66.3455 195.696 66.2954C161.381 65.8698 134.367 93.9989 134.19 123.63V133.924H190.107V203.182H134.19V386.282H55.917V203.182H0V133.924H55.917V123.58ZM618.736 386.255H541.017V133.898H618.736V386.255ZM1307.69 158.045C1328.03 133.273 1362.48 125.258 1386.07 131.996V199.725C1384.25 199.55 1382.41 199.525 1380.53 199.499H1380.55C1334.73 198.648 1304.14 222.368 1303.21 259.338V386.255H1225.54V133.774H1303.18L1305.5 157.343C1305.63 158.42 1307.01 158.896 1307.69 158.045ZM345.949 197.144C310.476 197.144 281.699 225.774 281.699 261.066C281.699 296.358 310.451 324.988 345.949 324.988C381.423 324.988 410.2 296.358 410.2 261.066C410.2 225.774 381.423 197.144 345.949 197.144ZM578.021 3.15575C601.414 2.14773 621.2 20.1983 622.213 43.4722C623.226 66.7459 605.083 86.43 581.689 87.438C558.296 88.4459 538.511 70.3962 537.498 47.1225C536.485 23.8487 554.627 4.16379 578.021 3.15575Z" fill="currentColor"></path>
+            </svg>
+          </div>-->
+        </div>
+
+       
+
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Script Entry -->
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
